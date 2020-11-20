@@ -2,9 +2,103 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Project_3</title>
+    <meta name="viewport" content="width=device-width"/>
+    <title>ohmyfood</title>
+    <link href="images/logo/ohmyfood_favicon.ico" rel="shortcut icon" type="image/ico"/>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
+<header>
+    <img alt="ohmyfood" id="header_logo" src="images/logo/ohmyfood_logo.png"/>
+    <form id="search">
+        <i class="fas fa-map-marker-alt map"></i>
+        <input class="holder" name="q" placeholder="Paris, Belleville" type="search">
+    </form>
+    <div id="header_container">
+    <div id="title">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+    </div>
+    <nav id="header_nav">
+        <input class="submit" type="submit" value="Explorer nos restaurants">
+        <button id="button_search" type="submit"></button>
+    </nav>
+    </div>
+</header>
+<main>
+    <section id="operation_container">
+        <h2>Fonctionnement</h2>
+        <nav id="filters_nav">
+            <div class="filter">
+                <i class="fas fa-map-marker-alt map"></i>
+                <i class="fas fa-money-bill-wave"></i>
+                <a href="#">Choisissez un restaurant</a>
+            </div>
+            <div class="filter">
+                <i class="fas fa-map-marker-alt map"></i>
+                <i class="fas fa-child"></i>
+                <a href="#">Composez votre menu</a>
+            </div>
+            <div class="filter">
+                <i class="fas fa-map-marker-alt map"></i>
+                <i class="fas fa-heart"></i>
+                <a href="#">Dégustez un restaurant</a>
+            </div>
+        </nav>
+    </section>
+        <section id="restaurant_container">
+            <h2>Restaurant</h2>
+                <article class="restaurant_article">
+                    <figure>
+                        <a href="#" class="img_restaurant_link"><img src="images/" alt="La palette du goût" class="img_restaurant"/></a>
+                        <figcaption>
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                            <i class="fas fa-star star-blue"></i>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="restaurant_article">
+                    <figure>
+                        <a href="#" class="img_restaurant_link"><img src="images/" alt="La note enchantée" class="img_restaurant"/></a>
+                        <figcaption>
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                            <i class="fas fa-star star-blue"></i>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="restaurant_article">
+                    <figure>
+                        <a href="#" class="img_restaurant_link"><img src="images/" alt="A la française" class="img_restaurant"/></a>
+                        <figcaption>
+                            <h3>A la française</h3>
+                            <p>Cité rouge</p>
+                            <i class="fas fa-star star-blue"></i>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="restaurant_article">
+                    <figure>
+                        <a href="#" class="img_restaurant_link"><img src="images/" alt="Le délice des sens" class="img_restaurant"/></a>
+                        <figcaption>
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                            <i class="fas fa-star star-blue"></i>
+                        </figcaption>
+                    </figure>
+                </article>
+        </section>
+</main>
+<footer>
+    <div id="footer_container">
+        <img alt="ohmyfood" id="header_image" src="images/logo/ohmyfood_logo.png"/>
+            <h3>ohmyfood</h3>
+            <a href="#">Proposer un restaurant</a>
+            <a href="#">Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+    </div>
+</footer>
 </body>
 </html>
