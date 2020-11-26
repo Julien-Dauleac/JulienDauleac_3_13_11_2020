@@ -1,0 +1,25 @@
+{
+  "name": "projet_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet_3_Openclassrooms_Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julien-Dauleac/JulienDauleac_3_13_11_2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julien-Dauleac/JulienDauleac_3_13_11_2020"
+  },
+  "homepage": "https://julien-dauleac.github.io/JulienDauleac_3_13_11_2020/",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.28.0"
+  }
+}
