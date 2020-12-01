@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "sass": "sass ./sass/main.scss:./style.css -w --style compressed",
-    "prefix": "postcss ./style.css --use autoprefixer -d ./style.css"
+    "sass": "sass ./sass/main.scss:./main.css -w --style compressed",
+    "prefix": "postcss ./sass/main.css --use autoprefixer -d ./sass/main.css"
   },
   "repository": {
     "type": "git",
