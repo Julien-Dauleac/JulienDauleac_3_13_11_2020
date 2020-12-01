@@ -9,9 +9,9 @@ body
 @mixin button($type)
 {
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 4px 24px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 18px;
   border-radius: 100px;
   color: white;
   background: $color-primary;
@@ -90,7 +90,7 @@ $appPadding: 1rem;
   }
 }
 
-.tuto
+.tutorial
 {
   padding: ( $appPadding + 1rem ) $appPadding;
 
