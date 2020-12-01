@@ -1,11 +1,13 @@
 {
   "name": "projet_3_ohmyfood",
   "version": "1.0.0",
-  "description": "Projet_3_Openclassrooms_Ohmyfood",
+  "description": "Openclassrooms_Projet_3_Ohmyfood",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "sass": "sass ./sass/main.scss:./style.css -w --style compressed",
+    "prefix": "postcss ./style.css --use autoprefixer -d ./style.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://julien-dauleac.github.io/JulienDauleac_3_13_11_2020/",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.28.0"
   }
 }
