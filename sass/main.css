@@ -38,6 +38,29 @@ body {
   font-weight: 700;
 }
 
+.heros {
+  padding: 2rem;
+  text-align: center;
+}
+.heros__title {
+  margin: 0;
+}
+.heros__subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.heros__btn {
+  border: 0;
+  padding: 4px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  cursor: pointer;
+}
+
 .hero {
   padding: 2rem;
   text-align: center;
@@ -108,10 +131,51 @@ body {
   color: #7e7e7e;
 }
 
+.menu {
+  padding: 2rem 1rem;
+}
+.menu__title {
+  margin-top: 0;
+}
+.menu__text {
+  display: flex;
+  flex-direction: column;
+}
+.menu__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+}
+.menu__step {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  background-color: white;
+  border-radius: 1.25rem;
+  display: flex;
+}
+.menu__step:first-child {
+  margin-top: 0;
+}
+.menu__step:last-child {
+  margin-bottom: 0;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+  border-radius: 60px 60px 0 0;
+}
+.restaurant__title {
+  display: flex;
+  align-items: center;
+}
+
 .card {
   background-color: white;
   margin: 1rem 0;
@@ -137,7 +201,6 @@ body {
 }
 .card__footer {
   padding: 1rem;
-  position: relative;
   display: flex;
   align-items: center;
 }

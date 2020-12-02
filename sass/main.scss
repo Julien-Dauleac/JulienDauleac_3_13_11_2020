@@ -67,6 +67,28 @@ $appPadding: 1rem;
   }
 }
 
+.heros
+{
+  padding: 2rem;
+  text-align: center;
+
+  &__title
+  {
+    margin: 0;
+  }
+
+  &__subtitle
+  {
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+
+  &__btn
+  {
+    @include button(primary);
+  }
+}
+
 .hero
 {
   padding: 2rem;
@@ -151,6 +173,49 @@ $appPadding: 1rem;
   }
 }
 
+.menu
+{
+  padding: ( $appPadding + 1rem ) $appPadding;
+
+  &__title
+  {
+    margin-top: 0;
+  }
+
+  &__text
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__steps
+  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+  }
+
+  &__step
+  {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    background-color: white;
+    border-radius: 1.25rem;
+    display: flex;
+
+    &:first-child
+    {
+      margin-top: 0;
+    }
+
+    &:last-child
+    {
+      margin-bottom: 0;
+    }
+  }
+}
 .restaurants
 {
   background-color: #f6f6f6;
@@ -158,6 +223,19 @@ $appPadding: 1rem;
 
   &__title {
 
+  }
+}
+
+.restaurant
+{
+  background-color: #f6f6f6;
+  padding: ($appPadding + 1rem) $appPadding;
+  border-radius: 60px 60px 0 0;
+
+  &__title
+  {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -192,7 +270,6 @@ $appPadding: 1rem;
   &__footer
   {
     padding: 1rem;
-    position: relative;
     display: flex;
     align-items: center;
   }
