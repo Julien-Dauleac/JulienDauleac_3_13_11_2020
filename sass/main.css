@@ -24,6 +24,18 @@ body {
 .header__button {
   border: none;
   background-color: white;
+  font-size: 20px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding: 0;
+}
+.header__logos {
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  padding-right: 100px;
 }
 
 .local {
@@ -138,11 +150,21 @@ body {
   padding: 2rem 1rem;
 }
 .menu__title {
+  font-weight: normal;
   margin-top: 0;
+  border-bottom: 3px #99E2D0 solid;
+  padding-bottom: 5px;
+  width: 10%;
 }
 .menu__text {
   display: flex;
   flex-direction: column;
+}
+.menu__text h4 {
+  margin: 0;
+}
+.menu__text p {
+  margin: 0;
 }
 .menu__steps {
   margin: 0;
@@ -178,6 +200,26 @@ body {
   display: flex;
   align-items: center;
   font-family: "Shrikhand", "cursive";
+  font-size: 21px;
+}
+.restaurant__title h2 {
+  padding-left: 10px;
+}
+.restaurant__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0 solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 65px;
+}
+.restaurant__img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card {

@@ -48,6 +48,20 @@ $appPadding: 1rem;
   {
     border: none;
     background-color: white;
+    font-size: 20px;
+  }
+  &__menu
+  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+  &__logos
+  {
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    padding-right: 100px;
   }
 }
 
@@ -183,13 +197,27 @@ $appPadding: 1rem;
 
   &__title
   {
+    font-weight: normal;
     margin-top: 0;
+    border-bottom: 3px $color-tertiary solid;
+    padding-bottom: 5px;
+    width: 10%;
   }
 
   &__text
   {
     display: flex;
     flex-direction: column;
+  }
+
+  &__text h4
+  {
+    margin: 0;
+  }
+
+  &__text p
+  {
+    margin: 0;
   }
 
   &__steps
@@ -241,6 +269,37 @@ $appPadding: 1rem;
     display: flex;
     align-items: center;
     font-family: "Shrikhand", "cursive";
+    font-size: 21px;
+  }
+
+  &__title h2
+  {
+    padding-left: 10px;
+  }
+
+  &__btn
+  {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0 solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left: 65px;
+  }
+
+  &__like
+  {
+
+  }
+
+  &__img
+  {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
