@@ -14,13 +14,16 @@ body {
 .header {
   padding: 1rem 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
   z-index: 1000;
 }
 .header__logo {
   font-family: "Shrikhand", "cursive";
   margin: 0;
   text-align: center;
+}
+.header__button {
+  border: none;
+  background-color: white;
 }
 
 .local {
@@ -174,6 +177,7 @@ body {
 .restaurant__title {
   display: flex;
   align-items: center;
+  font-family: "Shrikhand", "cursive";
 }
 
 .card {
