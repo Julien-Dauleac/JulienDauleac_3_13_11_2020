@@ -104,6 +104,8 @@ $appPadding: 1rem;
   &__btn
   {
     @include button(primary);
+    padding: 18px 50px;
+    font-size: 15px;
   }
 }
 
@@ -210,12 +212,7 @@ $appPadding: 1rem;
     flex-direction: column;
   }
 
-  &__text h4
-  {
-    margin: 0;
-  }
-
-  &__text p
+  &__text h4, p
   {
     margin: 0;
   }
@@ -228,6 +225,11 @@ $appPadding: 1rem;
     counter-reset: compteListe;
   }
 
+  &__step p
+  {
+    font-weight: bold;
+  }
+
   &__step
   {
     padding: 1.5rem;
@@ -236,6 +238,8 @@ $appPadding: 1rem;
     background-color: white;
     border-radius: 1.25rem;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
     &:first-child
     {

@@ -74,6 +74,8 @@ body {
   background: #9356DC;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   cursor: pointer;
+  padding: 18px 50px;
+  font-size: 15px;
 }
 
 .hero {
@@ -160,10 +162,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.menu__text h4 {
-  margin: 0;
-}
-.menu__text p {
+.menu__text h4, .menu p {
   margin: 0;
 }
 .menu__steps {
@@ -172,6 +171,9 @@ body {
   list-style: none;
   counter-reset: compteListe;
 }
+.menu__step p {
+  font-weight: bold;
+}
 .menu__step {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
@@ -179,6 +181,8 @@ body {
   background-color: white;
   border-radius: 1.25rem;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .menu__step:first-child {
   margin-top: 0;
