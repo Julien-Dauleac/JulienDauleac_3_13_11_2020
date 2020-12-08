@@ -222,9 +222,13 @@ body {
 .menu__text {
   display: flex;
   flex-direction: column;
+  width: 275px;
 }
 .menu__text h4, .menu p {
   margin: 0;
+}
+.menu__text h4 {
+  font-size: 20px;
 }
 .menu__steps {
   margin: 0;
@@ -237,7 +241,7 @@ body {
 }
 .menu__step {
   padding: 1.5rem;
-  margin: 2rem -5px 1rem -0.25rem;
+  margin: 2rem -15px 1rem -15px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   background-color: white;
   border-radius: 1.25rem;
