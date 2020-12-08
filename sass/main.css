@@ -11,6 +11,18 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
 }
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 435px;
+  box-sizing: border-box;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+}
+
 .header {
   padding: 1rem 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -35,7 +47,7 @@ body {
 .header__logos {
   font-family: "Shrikhand", "cursive";
   margin: 0;
-  padding-right: 100px;
+  padding-right: 25%;
 }
 
 .local {
@@ -66,7 +78,7 @@ body {
 }
 .heros__btn {
   border: 0;
-  padding: 4px 24px;
+  padding: 18px 25px;
   font-weight: 500;
   font-size: 18px;
   border-radius: 100px;
@@ -92,7 +104,56 @@ body {
 }
 .hero__btn {
   border: 0;
-  padding: 4px 24px;
+  padding: 18px 25px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  cursor: pointer;
+}
+
+.heros {
+  padding: 2rem;
+  text-align: center;
+}
+.heros__title {
+  margin: 0;
+}
+.heros__subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.heros__btn {
+  border: 0;
+  padding: 18px 25px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  cursor: pointer;
+  padding: 18px 50px;
+  font-size: 15px;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+.hero__title {
+  margin: 0;
+}
+.hero__subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.hero__btn {
+  border: 0;
+  padding: 18px 25px;
   font-weight: 500;
   font-size: 18px;
   border-radius: 100px;
@@ -171,12 +232,12 @@ body {
   list-style: none;
   counter-reset: compteListe;
 }
-.menu__step p {
+.menu__step > p {
   font-weight: bold;
 }
 .menu__step {
   padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
+  margin: 2rem -5px 1rem -0.25rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   background-color: white;
   border-radius: 1.25rem;
@@ -199,15 +260,19 @@ body {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
   border-radius: 60px 60px 0 0;
+  position: relative;
+  margin-top: -50px;
 }
 .restaurant__title {
   display: flex;
   align-items: center;
   font-family: "Shrikhand", "cursive";
-  font-size: 21px;
+  font-size: 125%;
 }
 .restaurant__title h2 {
   padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .restaurant__btn {
   height: 2rem;

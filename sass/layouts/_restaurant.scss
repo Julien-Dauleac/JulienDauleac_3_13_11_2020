@@ -1,0 +1,58 @@
+.restaurants
+{
+background-color: #f6f6f6;
+padding: ($appPadding + 1rem) $appPadding;
+
+&__title {
+
+}
+}
+
+.restaurant
+{
+  background-color: #f6f6f6;
+  padding: ($appPadding + 1rem) $appPadding;
+  border-radius: 60px 60px 0 0;
+  position: relative;
+  margin-top: -50px;
+
+&__title
+  {
+  display: flex;
+  align-items: center;
+  font-family: "Shrikhand", "cursive";
+  font-size: 125%;
+}
+
+&__title h2
+{
+padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+&__btn
+{
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0 solid;
+  padding: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-left: 65px;
+}
+
+&__like
+  {
+
+}
+
+&__img
+  {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+}

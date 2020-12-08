@@ -1,0 +1,12 @@
+@mixin button($type)
+{
+  border: 0;
+  padding: 18px 25px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: $color-primary;
+  background: linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+  cursor: pointer;
+}
