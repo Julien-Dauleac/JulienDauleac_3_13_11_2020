@@ -6,3 +6,27 @@
     transform: scale(1);
   }
 }
+
+.menu {
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-name: itemAppear;
+  animation-iteration-count: initial;
+}
+@keyframes itemAppear {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 93%;
+  }
+}
+
+@for $i from 0 to 9 {
+  .delay-#{$i} {
+    animation-delay:  #{$i/10}s;
+  }
+}

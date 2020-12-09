@@ -36,14 +36,58 @@
   counter-reset: compteListe;
  }
 
- &__step > p
+ &__price
  {
   font-weight: bold;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+ }
+
+ &__confirmation
+ {
+  background-color: $color-tertiary;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition-duration: 0.5s;
+ }
+
+ &:hover &__confirmation
+ {
+  margin-right: -1rem;
+ }
+
+ &__wrapIcon
+ {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+
+ }
+
+ &:hover &__wrapIcon
+ {
+  transform: rotate(0);
+ }
+
+ &__icon
+ {
+  color: $color-tertiary;
  }
 
  &__step
  {
-  padding: 1.5rem;
+  padding: 16px;
   margin: 2rem -15px 1rem -15px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   background-color: white;

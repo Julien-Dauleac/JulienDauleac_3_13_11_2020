@@ -69,22 +69,49 @@ position: relative;
   {
    height: 2rem;
    width: 2rem;
-   background-color: transparent;
    border: transparent 0 solid;
    padding: 0;
    display:flex;
    align-items:center;
    justify-content:center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+
+  &:hover::before {
+    opacity: 1;
   }
 
-&__filling
-  {
-    transition: all 0.3s linear 0s;
-    background-color: $color-primary;
-    width: 100%;
-    height: 0;
+  &::before {
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+  }
+}
+
+  &__like {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
+  }
+
+  &__btn:hover {
+    .menu__like
+    {
+      &--noBg
+      {
+        opacity: 0;
+      }
+   }
   }
 }
