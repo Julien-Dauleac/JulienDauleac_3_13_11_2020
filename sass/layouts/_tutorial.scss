@@ -5,7 +5,13 @@ padding: ( $appPadding + 1rem ) $appPadding;
 &__title
   {
   margin-top: 0;
-}
+
+  @media (min-width:1024px)
+  {
+    position: absolute;
+    left: 45%;
+  }
+  }
 
 &__steps
   {
@@ -13,6 +19,11 @@ padding: ( $appPadding + 1rem ) $appPadding;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
+
+  @media (min-width:1024px)
+  {
+    display: flex;
+  }
 }
 
 &__step
@@ -24,6 +35,17 @@ padding: ( $appPadding + 1rem ) $appPadding;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+
+  @media (min-width:1024px)
+  {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+
+    &:first-child {
+      margin-left: 0.75rem;
+    }
+  }
 
   &:first-child
 {
@@ -50,6 +72,11 @@ padding: ( $appPadding + 1rem ) $appPadding;
   position: absolute;
   left: -0.75rem;
 }
+  @media (min-width:1024px)
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 &__icon

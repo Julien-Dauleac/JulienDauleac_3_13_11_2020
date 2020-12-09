@@ -1,4 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: "";
+}
+
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #0dc5c1;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.1em 5.1em;
+  transform-origin: 5.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #0dc5c1;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 4.9em;
+  -webkit-transform-origin: 0.1em 5.1em;
+  transform-origin: 0.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -10,6 +82,16 @@ body {
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
 }
+@media (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 440px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 body {
   margin: 0;
@@ -21,6 +103,16 @@ body {
   box-sizing: border-box;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 440px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 .header {
@@ -169,11 +261,22 @@ body {
 .tutorial__title {
   margin-top: 0;
 }
+@media (min-width: 1024px) {
+  .tutorial__title {
+    position: absolute;
+    left: 45%;
+  }
+}
 .tutorial__steps {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
+}
+@media (min-width: 1024px) {
+  .tutorial__steps {
+    display: flex;
+  }
 }
 .tutorial__step {
   padding: 1.5rem;
@@ -183,6 +286,16 @@ body {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .tutorial__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .tutorial__step:first-child {
+    margin-left: 0.75rem;
+  }
 }
 .tutorial__step:first-child {
   margin-top: 0;
@@ -203,6 +316,12 @@ body {
   color: white;
   position: absolute;
   left: -0.75rem;
+}
+@media (min-width: 1024px) {
+  .tutorial__step {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .tutorial__icon {
   margin-right: 1rem;
@@ -260,6 +379,20 @@ body {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants__title {
+    max-height: 29px;
+    position: absolute;
+    left: 46%;
+    margin-top: 0;
+  }
+}
+
 .restaurant {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
@@ -295,11 +428,29 @@ body {
   object-fit: cover;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .cards {
+    display: flex;
+  }
+}
+
 .card {
   background-color: white;
   margin: 1rem 0;
   border-radius: 1rem;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 22%;
+    margin: 4rem 25px;
+  }
 }
 .card__img {
   height: 12rem;
@@ -343,12 +494,34 @@ body {
   align-items: center;
   justify-content: center;
 }
+.card__filling {
+  transition: all 0.3s linear 0s;
+  background-color: #9356DC;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+@media (min-width: 1024px) {
+  .footer {
+    align-items: center;
+  }
 }
 .footer__logo {
   color: white;

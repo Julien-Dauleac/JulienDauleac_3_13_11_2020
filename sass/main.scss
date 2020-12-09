@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+@import "./components/spinner";
 @import "./layouts/body";
 @import "./utils/mixins";
 @import "./utils/variables";
@@ -11,4 +12,5 @@
 @import "./layouts/menu";
 @import "./layouts/restaurant";
 @import "./components/card";
+@import "./components/animation";
 @import "./layouts/footer";

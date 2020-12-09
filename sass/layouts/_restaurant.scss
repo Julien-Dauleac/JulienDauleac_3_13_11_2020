@@ -2,9 +2,18 @@
 {
 background-color: #f6f6f6;
 padding: ($appPadding + 1rem) $appPadding;
-
+  @media (min-width:1024px)
+  {
+    display: flex;
+  }
 &__title {
-
+  @media (min-width:1024px)
+  {
+    max-height: 29px;
+    position: absolute;
+    left: 46%;
+    margin-top: 0;
+  }
 }
 }
 

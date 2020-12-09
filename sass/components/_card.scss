@@ -1,10 +1,26 @@
+.cards
+{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  @media (min-width:1024px)
+  {
+    display: flex;
+  }
+}
 .card
 {
 background-color: white;
 margin: 1rem 0;
 border-radius: 1rem;
 position: relative;
-
+  @media (min-width:1024px)
+  {
+    width: 22%;
+    margin: 4rem 25px;
+  }
 &__img
   {
   height: 12rem;
@@ -13,7 +29,7 @@ position: relative;
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
-}
+  }
 
 &__badge
   {
@@ -24,40 +40,51 @@ position: relative;
   position: absolute;
   top: 1rem;
   right: 0.75rem;
-}
+  }
 
 &__footer
   {
   padding: 1rem;
   display: flex;
   align-items: center;
-}
+  }
 
 &__content
   {
   flex: 1;
-}
+  }
 
 &__title
   {
   margin: 0;
   margin-bottom: 0.25rem;
-}
+  }
 
 &__subtitle
   {
   margin: 0;
-}
+  }
 
 &__btn
   {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0 solid;
-  padding: 0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+   height: 2rem;
+   width: 2rem;
+   background-color: transparent;
+   border: transparent 0 solid;
+   padding: 0;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+  }
+
+&__filling
+  {
+    transition: all 0.3s linear 0s;
+    background-color: $color-primary;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
