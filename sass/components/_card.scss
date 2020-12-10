@@ -5,9 +5,9 @@
   column-gap: 2rem;
   row-gap: 2rem;
 
-  @media (min-width:1024px)
+  @media (min-width:1024rem)
   {
-    display: flex;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .card
