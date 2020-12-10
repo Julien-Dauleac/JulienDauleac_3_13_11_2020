@@ -41,7 +41,8 @@
   counter-reset: compteListe;
   display: grid;
 
-  @media (min-width:64rem) {
+  @media (min-width:1024px)
+  {
    grid-template-columns: repeat(3,1fr);
    column-gap: 1rem;
   }

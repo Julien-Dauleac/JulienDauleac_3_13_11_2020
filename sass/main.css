@@ -139,7 +139,7 @@ body {
 .header__logos {
   font-family: "Shrikhand", "cursive";
   margin: 0;
-  padding-right: 25%;
+  padding-right: 29%;
 }
 
 .local {
@@ -349,7 +349,7 @@ body {
   counter-reset: compteListe;
   display: grid;
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   .menu__steps {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
@@ -440,6 +440,7 @@ body {
   align-items: center;
   font-family: "Shrikhand", "cursive";
   font-size: 125%;
+  justify-content: center;
 }
 .restaurant__title h2 {
   padding-left: 10px;
@@ -469,9 +470,9 @@ body {
   column-gap: 2rem;
   row-gap: 2rem;
 }
-@media (min-width: 1024rem) {
+@media (min-width: 1024px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
   }
 }
 
