@@ -31,38 +31,37 @@
   }
 }
 
-.lds-ring {
-  display: inline-block;
+.loaders .bar
+{
+  font-size: 20px;
+  width: 200px;
+  height: 25px;
+  border: 3px solid black;
+  margin: 100px auto;
+  border-radius: 7px;
   position: relative;
-  width: 80px;
-  height: 80px;
+  background: #9356DC;
 }
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
+
+.loaders .bar:after
+{
+  content: "Chargement...";
+  font-family: "Roboto", sans-serif;
   position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
+  left: 25%;
+  top: 150%;
+}
+
+.loaders .bar .sphere
+{
+  display: block;
+  width: 24px;
+  height: 100%;
+  background-color: white;
   border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  -moz-animation: slide 1.75s infinite ease-in-out alternate;
+  -webkit-animation: slide 1.75s infinite ease-in-out alternate;
+  -ms-animation: slide 1.75s infinite ease-in-out alternate;
+  -o-animation: slide 1.75s infinite ease-in-out alternate;
+  animation: slide 1.75s infinite ease-in-out alternate;
 }

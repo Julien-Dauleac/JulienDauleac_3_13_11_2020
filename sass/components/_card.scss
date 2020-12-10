@@ -74,9 +74,9 @@ position: relative;
    display:flex;
    align-items:center;
    justify-content:center;
-  cursor: pointer;
-  position: relative;
-  background-color: black;
+   cursor: pointer;
+   position: relative;
+   background-color: black;
 
   &:hover::before {
     opacity: 1;

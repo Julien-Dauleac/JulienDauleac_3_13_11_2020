@@ -45,7 +45,7 @@
   align-items: flex-end;
  }
 
- &__confirmation
+ &__validate
  {
   background-color: $color-tertiary;
   margin: -1rem -5rem -1rem 1rem;
@@ -56,7 +56,7 @@
   transition-duration: 0.5s;
  }
 
- &:hover &__confirmation
+ &:hover &__validate
  {
   margin-right: -1rem;
  }
