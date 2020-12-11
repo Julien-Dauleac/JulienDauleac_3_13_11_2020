@@ -93,6 +93,23 @@ body {
   }
 }
 
+.containers {
+  max-width: 435px;
+  box-sizing: border-box;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+}
+@media (min-width: 1024px) {
+  .containers {
+    max-width: 100%;
+  }
+}
+@media (min-width: 440px) {
+  .containers {
+    max-width: 100%;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -111,6 +128,23 @@ body {
 }
 @media (min-width: 440px) {
   .container {
+    max-width: 100%;
+  }
+}
+
+.containers {
+  max-width: 435px;
+  box-sizing: border-box;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+}
+@media (min-width: 1024px) {
+  .containers {
+    max-width: 100%;
+  }
+}
+@media (min-width: 440px) {
+  .containers {
     max-width: 100%;
   }
 }
@@ -628,10 +662,10 @@ body {
 }
 
 .sk-fading-circle {
-  margin: 100px auto;
-  width: 40px;
-  height: 40px;
-  position: relative;
+  margin-left: 47%;
+  width: 100px;
+  height: 100px;
+  position: fixed;
 }
 
 .sk-fading-circle .sk-circle {
@@ -639,7 +673,7 @@ body {
   height: 100%;
   position: absolute;
   left: 0;
-  top: 350px;
+  top: 500px;
 }
 
 .sk-fading-circle .sk-circle:before {
@@ -650,8 +684,8 @@ body {
   height: 15%;
   background-color: #9356DC;
   border-radius: 100%;
-  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
-  animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  -webkit-animation: sk-circleFadeDelay 2s ease-in-out both;
+  animation: sk-circleFadeDelay 2s ease-in-out both;
 }
 
 .sk-fading-circle .sk-circle2 {
@@ -791,6 +825,21 @@ body {
     opacity: 1;
   }
 }
+@keyframes transition {
+  0% {
+    margin-left: -70px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+div.containers {
+  opacity: 0;
+  animation: transition 1s ease-in-out 2s forwards;
+}
+
 .footer {
   background-color: #353535;
   display: flex;
