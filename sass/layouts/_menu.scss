@@ -81,11 +81,17 @@
   align-items:center;
   justify-content:center;
   transition-duration: 0.5s;
+
+  &::before
+  {
+   display: none;
+  }
  }
 
- &:before &__validate
+
+ &:active &__validate
  {
-  content: none;
+
  }
 
  &:hover &__validate

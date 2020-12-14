@@ -448,8 +448,8 @@ body {
   justify-content: center;
   transition-duration: 0.5s;
 }
-.menu:before .menu__validate {
-  content: none;
+.menu__validate::before {
+  display: none;
 }
 .menu:hover .menu__validate {
   margin-right: -1rem;
