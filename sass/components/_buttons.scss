@@ -15,16 +15,20 @@
   &__btn
   {
     @include button(primary);
+    text-decoration: none
   }
 }
 
-.wrapBtn {
+.wrapBtn
+{
   display: flex;
   text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
 }
 
-.commandBtn {
+.commandBtn
+{
   @include button(primary);
+  text-decoration: none
 }

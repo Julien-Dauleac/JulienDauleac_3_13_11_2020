@@ -17,10 +17,18 @@
 
 .sk-fading-circle
 {
-  margin-left: 47%;
+  margin-left: 38%;
   width: 100px;
   height: 100px;
   position: fixed;
+  @media (min-width:1024px)
+  {
+    margin-left: 47%;
+  }
+  @media (min-width:724px)
+  {
+    margin-left: 42%;
+  }
 }
 
 .sk-fading-circle .sk-circle
@@ -31,7 +39,6 @@
   left: 0;
   top: 500px;
 }
-
 .sk-fading-circle .sk-circle:before
 {
   content: '';
