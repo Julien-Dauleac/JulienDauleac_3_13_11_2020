@@ -110,45 +110,6 @@ body {
   }
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.container {
-  max-width: 435px;
-  box-sizing: border-box;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 100%;
-  }
-}
-@media (min-width: 440px) {
-  .container {
-    max-width: 100%;
-  }
-}
-
-.containers {
-  max-width: 435px;
-  box-sizing: border-box;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
-}
-@media (min-width: 1024px) {
-  .containers {
-    max-width: 100%;
-  }
-}
-@media (min-width: 440px) {
-  .containers {
-    max-width: 100%;
-  }
-}
-
 .header {
   padding: 1rem 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -176,7 +137,20 @@ body {
   padding-right: 29%;
 }
 
-.local {
+.titles {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+.titles__title {
+  margin: 0;
+}
+.titles__subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.navigation {
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
@@ -184,26 +158,14 @@ body {
   font-size: 1.2rem;
   position: relative;
 }
-.local__icon {
+.navigation__icon {
   margin-right: 1rem;
 }
-.local__text {
+.navigation__text {
   font-weight: 700;
 }
 
-.hero {
-  padding: 2rem;
-  text-align: center;
-  background-color: #fafafa;
-}
-.hero__title {
-  margin: 0;
-}
-.hero__subtitle {
-  font-weight: 300;
-  margin: 1.5rem 0;
-}
-.hero__btn {
+.titles__btn {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -217,97 +179,7 @@ body {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
-.hero__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.wrapBtn {
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  padding: 3rem 0;
-}
-
-.commandBtn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: white;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-}
-.commandBtn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.card__btn {
-  height: 2rem;
-  width: 2rem;
-  border: transparent 0 solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.card__btn:hover .far {
-  display: none;
-}
-.card__btn:hover .heart {
-  display: block;
-}
-.card__btn:hover::before {
-  opacity: 1;
-}
-.card__btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-
-.hero {
-  padding: 2rem;
-  text-align: center;
-  background-color: #fafafa;
-}
-.hero__title {
-  margin: 0;
-}
-.hero__subtitle {
-  font-weight: 300;
-  margin: 1.5rem 0;
-}
-.hero__btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: white;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-}
-.hero__btn:hover {
+.titles__btn:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
@@ -383,18 +255,18 @@ body {
     left: 45%;
   }
 }
-.tutorial__steps {
+.tutorial__blocks {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
 }
 @media (min-width: 1024px) {
-  .tutorial__steps {
+  .tutorial__blocks {
     display: flex;
   }
 }
-.tutorial__step {
+.tutorial__block {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -404,22 +276,22 @@ body {
   position: relative;
 }
 @media (min-width: 1024px) {
-  .tutorial__step {
+  .tutorial__block {
     flex: 1;
     margin: 0;
     margin-left: 2rem;
   }
-  .tutorial__step:first-child {
+  .tutorial__block:first-child {
     margin-left: 0.75rem;
   }
 }
-.tutorial__step:first-child {
+.tutorial__block:first-child {
   margin-top: 0;
 }
-.tutorial__step:last-child {
+.tutorial__block:last-child {
   margin-bottom: 0;
 }
-.tutorial__step::before {
+.tutorial__block::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356DC;
@@ -434,7 +306,7 @@ body {
   left: -0.75rem;
 }
 @media (min-width: 1024px) {
-  .tutorial__step {
+  .tutorial__block {
     display: flex;
     flex-wrap: wrap;
   }
@@ -484,7 +356,7 @@ body {
 .menu__text h4 {
   font-size: 20px;
 }
-.menu__steps {
+.menu__blocks {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -493,7 +365,7 @@ body {
   flex-direction: column;
 }
 @media (min-width: 1024px) {
-  .menu__steps {
+  .menu__blocks {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -522,12 +394,12 @@ body {
   justify-content: center;
   border-radius: 100px;
   transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .menu__icon {
   color: #99E2D0;
 }
-.menu__step {
+.menu__block {
   padding: 16px;
   margin: 2rem -15px 1rem -15px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -537,17 +409,21 @@ body {
   justify-content: space-between;
   align-items: flex-end;
 }
-.menu__step:first-child {
+.menu__block:first-child {
   margin-top: 0;
 }
-.menu__step:last-child {
+.menu__block:last-child {
   margin-bottom: 0;
 }
-.menu__step:hover .menu__validate {
+.menu__block:hover .menu__validate {
   margin-right: -1rem;
+  display: flex;
 }
-.menu__step:hover .menu__icons {
+.menu__block:hover .menu__icons {
   transform: rotate(0);
+}
+.menu .menu__validate {
+  display: none;
 }
 
 .restaurants {
