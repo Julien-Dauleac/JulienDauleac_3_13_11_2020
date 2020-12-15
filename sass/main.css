@@ -188,7 +188,7 @@ body {
   display: flex;
   text-decoration: none;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 48px 0;
 }
 
 .commandBtn {
@@ -211,8 +211,8 @@ body {
 }
 
 .card__btn {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
   border: transparent 0 solid;
   padding: 0;
   display: flex;
@@ -400,13 +400,12 @@ body {
   color: #99E2D0;
 }
 .menu__block {
-  margin: 2rem -15px 1rem -15px;
-  box-shadow: 0.25rem 0.25rem 0.5rem lightgray;
+  margin: 32px -15px 16px -15px;
+  box-shadow: 4px 4px 8px lightgray;
   background-color: white;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .menu__block:first-child {
   margin-top: 0;
@@ -415,7 +414,7 @@ body {
   margin-bottom: 0;
 }
 .menu__block:hover .menu__validate {
-  margin-right: -1rem;
+  margin-right: -16px;
   display: flex;
 }
 .menu__block:hover .menu__icons {
