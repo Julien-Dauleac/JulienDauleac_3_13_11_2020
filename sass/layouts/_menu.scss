@@ -27,6 +27,9 @@
   display: flex;
   flex-direction: column;
   width: 275px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width:1024px)
   {
@@ -64,10 +67,6 @@
  &__price
  {
   font-weight: bold;
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
  }
 
  &__validate
@@ -81,23 +80,8 @@
   align-items:center;
   justify-content:center;
   transition-duration: 0.5s;
-
-  &::before
-  {
-   display: none;
-  }
  }
 
-
- &:active &__validate
- {
-
- }
-
- &:hover &__validate
- {
-  margin-right: -1rem;
- }
 
  &__icons
  {
@@ -111,11 +95,6 @@
   transform: rotate(180deg);
   transition-duration: 0.5s;
 
- }
-
- &:hover &__icons
- {
-  transform: rotate(0);
  }
 
  &__icon
@@ -142,6 +121,16 @@
    &:last-child
   {
    margin-bottom: 0;
+  }
+
+  &:hover .menu__validate
+  {
+   margin-right: -1rem;
+
+  }
+  &:hover .menu__icons
+  {
+   transform: rotate(0);
   }
  }
 }

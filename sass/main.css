@@ -248,6 +248,39 @@ body {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
+.card__btn {
+  height: 2rem;
+  width: 2rem;
+  border: transparent 0 solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.card__btn:hover .far {
+  display: none;
+}
+.card__btn:hover .heart {
+  display: block;
+}
+.card__btn:hover::before {
+  opacity: 1;
+}
+.card__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+
 .hero {
   padding: 2rem;
   text-align: center;
@@ -303,6 +336,39 @@ body {
 .commandBtn:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__btn {
+  height: 2rem;
+  width: 2rem;
+  border: transparent 0 solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.card__btn:hover .far {
+  display: none;
+}
+.card__btn:hover .heart {
+  display: block;
+}
+.card__btn:hover::before {
+  opacity: 1;
+}
+.card__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 
 .tutorial {
@@ -403,6 +469,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 275px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (min-width: 1024px) {
   .menu__text {
@@ -432,10 +501,6 @@ body {
 }
 .menu__price {
   font-weight: bold;
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
 }
 .menu__validate {
   background-color: #99E2D0;
@@ -448,12 +513,6 @@ body {
   justify-content: center;
   transition-duration: 0.5s;
 }
-.menu__validate::before {
-  display: none;
-}
-.menu:hover .menu__validate {
-  margin-right: -1rem;
-}
 .menu__icons {
   height: 1.6rem;
   width: 1.6rem;
@@ -464,9 +523,6 @@ body {
   border-radius: 100px;
   transform: rotate(180deg);
   transition-duration: 0.5s;
-}
-.menu:hover .menu__icons {
-  transform: rotate(0);
 }
 .menu__icon {
   color: #99E2D0;
@@ -486,6 +542,12 @@ body {
 }
 .menu__step:last-child {
   margin-bottom: 0;
+}
+.menu__step:hover .menu__validate {
+  margin-right: -1rem;
+}
+.menu__step:hover .menu__icons {
+  transform: rotate(0);
 }
 
 .restaurants {
@@ -598,32 +660,6 @@ body {
 .card__subtitle {
   margin: 0;
 }
-.card__btn {
-  height: 2rem;
-  width: 2rem;
-  border: transparent 0 solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.card__btn:hover::before {
-  opacity: 1;
-}
-.card__btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
 .card__like {
   background-color: white;
   height: 100%;
@@ -633,8 +669,8 @@ body {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.card__btn:hover .menu__like--noBg {
-  opacity: 0;
+.card .heart {
+  display: none;
 }
 
 @keyframes itemAppear {

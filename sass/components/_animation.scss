@@ -185,7 +185,8 @@
   40% { opacity: 1; }
 }
 
-@keyframes transition {
+@keyframes transition
+{
   0%   { margin-left: -70px;opacity:0; }
   100% { margin-left: 0;opacity:1; }
 }
