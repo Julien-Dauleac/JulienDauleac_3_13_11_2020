@@ -24,23 +24,19 @@
 
  &__text
  {
-  display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  width: 275px;
   padding: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  @media (min-width:1024px)
-  {
-   width: 310px;
-  }
+  width: 350px;
+  min-width: 0;
  }
 
  &__text h4, p
  {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
  }
 
  &__text h4
@@ -68,20 +64,23 @@
  &__price
  {
   font-weight: bold;
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 15px;
+  padding-right: 20px;
  }
 
  &__validate
  {
   background-color: $color-tertiary;
   width: 64px;
-  height: 94px;
+  height: 75px;
   border-radius: 0 10px 10px 0;
   display:flex;
   align-items:center;
   justify-content:center;
   transition-duration: 0.5s;
  }
-
 
  &__icons
  {
@@ -94,7 +93,6 @@
   border-radius: 100px;
   transform: rotate(180deg);
   transition-duration: 0.5s;
-
  }
 
  &__icon
@@ -123,8 +121,7 @@
 
   &:hover .menu__validate
   {
-   margin-right: -16px;
-   display: flex;
+   max-width: 100%;
   }
 
   &:hover .menu__icons
@@ -135,6 +132,7 @@
 
 .menu__validate
  {
-   display: none;
+   overflow: hidden;
+   max-width: 0;
  }
 }

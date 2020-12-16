@@ -129,12 +129,13 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
+  align-items: center;
   padding: 0;
 }
 .header__logos {
   font-family: "Shrikhand", "cursive";
   margin: 0;
-  padding-right: 29%;
+  padding-right: 24%;
 }
 
 .titles {
@@ -338,21 +339,17 @@ body {
   width: 10%;
 }
 .menu__text {
-  display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  width: 275px;
   padding: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media (min-width: 1024px) {
-  .menu__text {
-    width: 310px;
-  }
+  width: 350px;
+  min-width: 0;
 }
 .menu__text h4, .menu p {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__text h4 {
   font-size: 20px;
@@ -374,11 +371,15 @@ body {
 }
 .menu__price {
   font-weight: bold;
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 15px;
+  padding-right: 20px;
 }
 .menu__validate {
   background-color: #99E2D0;
   width: 64px;
-  height: 94px;
+  height: 75px;
   border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
@@ -414,14 +415,14 @@ body {
   margin-bottom: 0;
 }
 .menu__block:hover .menu__validate {
-  margin-right: -16px;
-  display: flex;
+  max-width: 100%;
 }
 .menu__block:hover .menu__icons {
   transform: rotate(0);
 }
 .menu .menu__validate {
-  display: none;
+  overflow: hidden;
+  max-width: 0;
 }
 
 .restaurants {
