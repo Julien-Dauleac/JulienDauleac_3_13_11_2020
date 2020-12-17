@@ -1,7 +1,7 @@
 .restaurants
 {
 background-color: #f6f6f6;
-padding: ($appPadding + 1rem) $appPadding;
+padding: ($appPadding + 16px) $appPadding;
   @media (min-width:1024px)
   {
     display: flex;
@@ -20,7 +20,7 @@ padding: ($appPadding + 1rem) $appPadding;
 .restaurant
 {
   background-color: #f6f6f6;
-  padding: ($appPadding + 1rem) $appPadding;
+  padding: ($appPadding + 16px) $appPadding;
   border-radius: 60px 60px 0 0;
   position: relative;
   margin-top: -50px;
@@ -43,8 +43,8 @@ padding-left: 10px;
 
 &__btn
 {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
   background-color: transparent;
   border: transparent 0 solid;
   padding: 0;
@@ -61,7 +61,7 @@ padding-left: 10px;
 
 &__img
   {
-  height: 20rem;
+  height: 320px;
   width: 100%;
   object-fit: cover;
 }

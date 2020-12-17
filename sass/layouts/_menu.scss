@@ -1,6 +1,6 @@
 .menu
 {
- padding: ( $appPadding + 1rem ) $appPadding;
+ padding: ( $appPadding + 16px ) $appPadding;
  cursor: pointer;
  animation: itemAppear 3s;
  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);

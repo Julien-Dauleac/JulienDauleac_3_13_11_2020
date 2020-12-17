@@ -1,6 +1,6 @@
 .tutorial
 {
-padding: ( $appPadding + 1rem ) $appPadding;
+padding: ( $appPadding + 16px ) $appPadding;
 
 &__title
   {
@@ -28,10 +28,10 @@ padding: ( $appPadding + 1rem ) $appPadding;
 
 &__block
   {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-  border-radius: 1.25rem;
+  padding: 24px;
+  margin: 16px 0 16px 12px;
+  box-shadow: 4px 4px 8px lightgray;
+  border-radius: 20px;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
@@ -40,10 +40,10 @@ padding: ( $appPadding + 1rem ) $appPadding;
   {
     flex: 1;
     margin: 0;
-    margin-left: 2rem;
+    margin-left: 32px;
 
     &:first-child {
-      margin-left: 0.75rem;
+      margin-left: 12px;
     }
   }
 
@@ -62,15 +62,15 @@ padding: ( $appPadding + 1rem ) $appPadding;
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: $color-primary;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 24px;
+  width: 24px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   position: absolute;
-  left: -0.75rem;
+  left: -12px;
 }
   @media (min-width:1024px)
   {
@@ -81,7 +81,7 @@ padding: ( $appPadding + 1rem ) $appPadding;
 
 &__icon
   {
-  margin-right: 1rem;
+  margin-right: 16px;
   color: #7e7e7e;
 }
 }

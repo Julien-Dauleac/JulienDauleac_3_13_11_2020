@@ -111,7 +111,7 @@ body {
 }
 
 .header {
-  padding: 1rem 1rem;
+  padding: 16px 16px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
@@ -139,28 +139,28 @@ body {
 }
 
 .titles {
-  padding: 2rem;
+  padding: 32px;
   text-align: center;
-  background-color: #fafafa;
+  background-color: white;
 }
 .titles__title {
   margin: 0;
 }
 .titles__subtitle {
   font-weight: 300;
-  margin: 1.5rem 0;
+  margin: 24px 0;
 }
 
 .navigation {
   display: flex;
   justify-content: center;
-  padding: 1.25rem 1rem;
-  background-color: #f3f3f3;
-  font-size: 1.2rem;
+  padding: 20px 16px;
+  background-color: white;
+  font-size: 19px;
   position: relative;
 }
 .navigation__icon {
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 .navigation__text {
   font-weight: 700;
@@ -168,21 +168,21 @@ body {
 
 .titles__btn {
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 18px;
   border-radius: 100px;
   color: white;
-  background-color: #686868;
+  background-color: dimgray;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 .titles__btn:hover {
   background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menuBtn {
@@ -194,21 +194,21 @@ body {
 
 .commandBtn {
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 18px;
   border-radius: 100px;
   color: white;
-  background-color: #686868;
+  background-color: dimgray;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
   cursor: pointer;
   transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 .commandBtn:hover {
   background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card__btn {
@@ -245,7 +245,7 @@ body {
 }
 
 .tutorial {
-  padding: 2rem 1rem;
+  padding: 32px 16px;
 }
 .tutorial__title {
   margin-top: 0;
@@ -268,10 +268,10 @@ body {
   }
 }
 .tutorial__block {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-  border-radius: 1.25rem;
+  padding: 24px;
+  margin: 16px 0 16px 12px;
+  box-shadow: 4px 4px 8px lightgray;
+  border-radius: 20px;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
@@ -280,10 +280,10 @@ body {
   .tutorial__block {
     flex: 1;
     margin: 0;
-    margin-left: 2rem;
+    margin-left: 32px;
   }
   .tutorial__block:first-child {
-    margin-left: 0.75rem;
+    margin-left: 12px;
   }
 }
 .tutorial__block:first-child {
@@ -296,15 +296,15 @@ body {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
   background: #9356DC;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 24px;
+  width: 24px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   position: absolute;
-  left: -0.75rem;
+  left: -12px;
 }
 @media (min-width: 1024px) {
   .tutorial__block {
@@ -313,12 +313,12 @@ body {
   }
 }
 .tutorial__icon {
-  margin-right: 1rem;
+  margin-right: 16px;
   color: #7e7e7e;
 }
 
 .menu {
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   cursor: pointer;
   animation: itemAppear 3s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
@@ -427,7 +427,7 @@ body {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
 }
 @media (min-width: 1024px) {
   .restaurants {
@@ -445,7 +445,7 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   border-radius: 60px 60px 0 0;
   position: relative;
   margin-top: -50px;
@@ -463,8 +463,8 @@ body {
   margin-bottom: 0;
 }
 .restaurant__btn {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
   background-color: transparent;
   border: transparent 0 solid;
   padding: 0;
@@ -474,27 +474,27 @@ body {
   padding-left: 80px;
 }
 .restaurant__img {
-  height: 20rem;
+  height: 320px;
   width: 100%;
   object-fit: cover;
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 1024px) {
   .cards {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }
 
 .card {
   background-color: white;
-  margin: 1rem 0;
-  border-radius: 1rem;
+  margin: 16px 0;
+  border-radius: 16px;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -504,24 +504,24 @@ body {
   }
 }
 .card__img {
-  height: 12rem;
+  height: 192px;
   width: 100%;
   border: transparent solid 0;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 16px 16px 0 0;
   box-shadow: none;
   object-fit: cover;
 }
 .card__badge {
   background-color: #99E2D0;
   color: #1b6150;
-  padding: 0.5rem;
-  border-radius: 0.125rem;
+  padding: 8px;
+  border-radius: 2px;
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
+  top: 16px;
+  right: 12px;
 }
 .card__footer {
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   align-items: center;
 }
@@ -530,7 +530,7 @@ body {
 }
 .card__title {
   margin: 0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 4px;
 }
 .card__subtitle {
   margin: 0;
@@ -809,7 +809,7 @@ div.containers {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 16px;
 }
 @media (min-width: 1024px) {
   .footer {
@@ -820,21 +820,21 @@ div.containers {
   color: white;
   font-family: "Shrikhand", "cursive";
   margin: 0;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 19px;
+  margin-bottom: 16px;
 }
-.footer__list {
+.footer__lists {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer__listElt {
-  margin: 0.5rem 0;
+.footer__list {
+  margin: 8px 0;
 }
-.footer__listElt:first-child {
+.footer__list:first-child {
   margin-top: 0;
 }
-.footer__listElt:last-child {
+.footer__list:last-child {
   margin-bottom: 0;
 }
 .footer__link {
@@ -845,8 +845,8 @@ div.containers {
   text-decoration: underline;
 }
 .footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
+  width: 19px;
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,21 +1,21 @@
 .cards
 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width:1024px)
   {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }
 
 .card
 {
 background-color: white;
-margin: 1rem 0;
-border-radius: 1rem;
+margin: 16px 0;
+border-radius: 16px;
 position: relative;
 
   @media (min-width:1024px)
@@ -26,10 +26,10 @@ position: relative;
 
 &__img
   {
-  height: 12rem;
+  height: 192px;
   width: 100%;
   border: transparent solid 0;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 16px 16px 0 0;
   box-shadow: none;
   object-fit: cover;
   }
@@ -38,16 +38,16 @@ position: relative;
   {
   background-color: $color-tertiary;
   color: darken($color-tertiary, 50%);
-  padding: 0.5rem;
-  border-radius: 0.125rem;
+  padding: 8px;
+  border-radius: 2px;
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
+  top: 16px;
+  right: 12px;
   }
 
 &__footer
   {
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   align-items: center;
   }
@@ -60,7 +60,7 @@ position: relative;
 &__title
   {
   margin: 0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 4px;
   }
 
 &__subtitle

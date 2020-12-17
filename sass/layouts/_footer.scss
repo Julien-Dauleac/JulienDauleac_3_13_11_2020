@@ -13,20 +13,20 @@ padding: $appPadding;
   color: white;
   font-family: "Shrikhand", "cursive";
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 19px;
   margin-bottom: $appPadding;
 }
 
-&__list
+&__lists
   {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-&__listElt
+&__list
   {
-  margin: 0.5rem 0;
+  margin: 8px 0;
 
   &:first-child
 {
@@ -52,7 +52,7 @@ padding: $appPadding;
 
 &__icon
   {
-  width: 1.2rem;
-  margin-right: 0.5rem;
+  width: 19px;
+  margin-right: 8px;
 }
 }
