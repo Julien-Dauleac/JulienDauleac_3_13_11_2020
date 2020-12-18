@@ -321,12 +321,6 @@ body {
   animation-fill-mode: both;
   transform: scale(0);
 }
-@media (min-width: 1024px) {
-  .menu {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-}
 .menu__title {
   font-weight: normal;
   margin-top: 0;
@@ -358,11 +352,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1700px) {
   .menu__blocks {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 .menu__price {
@@ -446,6 +440,19 @@ body {
   position: relative;
   margin-top: -50px;
 }
+@media (min-width: 1700px) {
+  .restaurant {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .restaurant__title {
   display: flex;
   align-items: center;
@@ -453,7 +460,7 @@ body {
   font-size: 125%;
   justify-content: space-evenly;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1700px) {
   .restaurant__title {
     justify-content: center;
   }
