@@ -6,7 +6,8 @@ padding: ($appPadding + 16px) $appPadding;
   {
     display: flex;
   }
-&__title {
+&__title
+{
   @media (min-width:1024px)
   {
     max-height: 29px;
@@ -27,16 +28,20 @@ padding: ($appPadding + 16px) $appPadding;
 
 &__title
   {
-  display: flex;
-  align-items: center;
-  font-family: "Shrikhand", "cursive";
-  font-size: 125%;
-  justify-content: center;
-}
+   display: flex;
+   align-items: center;
+   font-family: "Shrikhand", "cursive";
+   font-size: 125%;
+   justify-content: space-evenly;
+
+   @media (min-width:1024px)
+   {
+    justify-content: center;
+   }
+  }
 
 &__title h2
 {
-padding-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -51,18 +56,17 @@ padding-left: 10px;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding-left: 80px;
-}
 
-&__like
+  @media (min-width:1024px)
   {
-
+    padding-left: 30px;
+  }
 }
 
 &__img
   {
-  height: 320px;
-  width: 100%;
-  object-fit: cover;
-}
+   height: 320px;
+   width: 100%;
+   object-fit: cover;
+  }
 }
