@@ -127,6 +127,7 @@ body {
   position: relative;
   bottom: 35px;
   left: 20px;
+  cursor: pointer;
 }
 .header__menu {
   height: 50px;
