@@ -21,13 +21,9 @@
   width: 100px;
   height: 100px;
   position: fixed;
-  @media (min-width:1024px)
-  {
-    margin-left: 47%;
-  }
   @media (min-width:724px)
   {
-    margin-left: 42%;
+    margin-left: 47%;
   }
 }
 
