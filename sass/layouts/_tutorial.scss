@@ -54,7 +54,8 @@ padding: ( $appPadding + 16px ) $appPadding;
 
   &:last-child
 {
-  margin-bottom: 0;
+    margin-bottom: 0;
+    background-color: #F0E4F8;
 }
 
   &::before
@@ -81,7 +82,11 @@ padding: ( $appPadding + 16px ) $appPadding;
 
 &__icon
   {
-  margin-right: 16px;
-  color: #7e7e7e;
+   margin-right: 16px;
+   color: #7e7e7e;
+  }
+.fa-store
+{
+  color: $color-primary;
 }
 }
