@@ -19,6 +19,7 @@ padding: ( $appPadding + 16px ) $appPadding;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
+  font-weight: bold;
 
   @media (min-width:1024px)
   {
