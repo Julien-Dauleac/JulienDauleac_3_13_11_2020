@@ -28,15 +28,9 @@ padding: ($appPadding + 16px) $appPadding;
   position: relative;
   margin-top: -50px;
 
-  @media (min-width: 1700px)
-  {
-    display: block;
-  }
-
   @media only screen and (max-width: 1300px) and (min-width: 440px)
   {
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
 
@@ -46,35 +40,33 @@ padding: ($appPadding + 16px) $appPadding;
    align-items: center;
    font-family: "Shrikhand", "cursive";
    font-size: 125%;
-   justify-content: space-evenly;
-
-   @media (min-width: 1300px)
-   {
-    justify-content: center;
-   }
+   justify-content: center;
   }
 
 &__title h2
 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 5%;
 }
 
 &__btn
 {
   height: 32px;
   width: 32px;
-  background-color: transparent;
   border: transparent 0 solid;
   padding: 0;
+}
+
+&__like
+{
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
   display:flex;
   align-items:center;
   justify-content:center;
-
-  @media (min-width:1024px)
-  {
-    padding-left: 30px;
-  }
+  mix-blend-mode: lighten;
 }
 
 &__img
@@ -82,5 +74,10 @@ padding: ($appPadding + 16px) $appPadding;
    height: 320px;
    width: 100%;
    object-fit: cover;
+  }
+
+  .heart
+  {
+    display: none;
   }
 }

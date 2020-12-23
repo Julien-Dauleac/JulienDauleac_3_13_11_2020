@@ -207,7 +207,7 @@ body {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.card__btn {
+.card__btn, .restaurant__btn {
   height: 32px;
   width: 32px;
   border: transparent 0 solid;
@@ -219,16 +219,16 @@ body {
   position: relative;
   background-color: black;
 }
-.card__btn:hover .far {
+.card__btn:hover .far, .restaurant__btn:hover .far {
   display: none;
 }
-.card__btn:hover .heart {
+.card__btn:hover .heart, .restaurant__btn:hover .heart {
   display: block;
 }
-.card__btn:hover::before {
+.card__btn:hover::before, .restaurant__btn:hover::before {
   opacity: 1;
 }
-.card__btn::before {
+.card__btn::before, .restaurant__btn::before {
   opacity: 0;
   transition: 0.5s;
   content: "";
@@ -356,6 +356,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 1300px) and (min-width: 440px) {
+  .menu__blocks {
+    align-items: center;
+  }
+}
 @media (min-width: 1300px) {
   .menu__blocks {
     display: flex;
@@ -445,15 +450,9 @@ body {
   position: relative;
   margin-top: -50px;
 }
-@media (min-width: 1700px) {
-  .restaurant {
-    display: block;
-  }
-}
 @media only screen and (max-width: 1300px) and (min-width: 440px) {
   .restaurant {
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
 }
@@ -462,36 +461,35 @@ body {
   align-items: center;
   font-family: "Shrikhand", "cursive";
   font-size: 125%;
-  justify-content: space-evenly;
-}
-@media (min-width: 1300px) {
-  .restaurant__title {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 .restaurant__title h2 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 5%;
 }
 .restaurant__btn {
   height: 32px;
   width: 32px;
-  background-color: transparent;
   border: transparent 0 solid;
   padding: 0;
+}
+.restaurant__like {
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media (min-width: 1024px) {
-  .restaurant__btn {
-    padding-left: 30px;
-  }
+  mix-blend-mode: lighten;
 }
 .restaurant__img {
   height: 320px;
   width: 100%;
   object-fit: cover;
+}
+.restaurant .heart {
+  display: none;
 }
 
 .cards {
